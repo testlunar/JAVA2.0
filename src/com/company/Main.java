@@ -38,7 +38,6 @@ public class Main {
                 System.out.printf("Некорректный оператор");
                 return;
         }
-
         System.out.print("Результат = ");
         System.out.printf(num1 + " " + op + " " + num2 + " = " + "%.4f", res);
     }
