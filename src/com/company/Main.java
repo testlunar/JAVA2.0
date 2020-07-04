@@ -41,6 +41,5 @@ public class Main {
 
         System.out.print("Результат = ");
         System.out.printf(num1 + " " + op + " " + num2 + " = " + "%.4f", res);
-
     }
 }
