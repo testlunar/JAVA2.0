@@ -20,22 +20,27 @@ public class Main {
         System.out.println("Введите оператор:+, -, *, /");
         Scanner reader = new Scanner(System.in);
         char op = reader.next().charAt(0); // для считывания одного символа
-        double res=0;
-        switch(op) {
-            case '+': res = num1 + num2;
+        double res = 0;
+        switch (op) {
+            case '+':
+                res = num1 + num2;
                 break;
-            case '-': res = num1 - num2;
+            case '-':
+                res = num1 - num2;
                 break;
-            case '*': res = num1 * num2;
+            case '*':
+                res = num1 * num2;
                 break;
-            case '/': res = num1 / num2;
+            case '/':
+                res = num1 / num2;
                 break;
-            default:  System.out.printf("Некорректный оператор");
+            default:
+                System.out.printf("Некорректный оператор");
                 return;
         }
 
         System.out.print("Результат = ");
-        System.out.printf(num1 + " " + op + " " + num2 + " = " + "%.4f",res);
+        System.out.printf(num1 + " " + op + " " + num2 + " = " + "%.4f", res);
 
     }
 }
