@@ -7,16 +7,16 @@ import java.util.Scanner;
 public class GetData {
 
 
-    public static int getInt() {
+    public static double getDouble() {
         System.out.println("Введите число:");
-        int num;
+        double num;
         Scanner reader = new Scanner(System.in);
         try {
-          num = reader.nextInt();
+          num = reader.nextDouble();
         } catch (Exception y) {
             System.out.println("Вы ввели не число!");
             reader.next();
-            num = getInt();
+            num = getDouble();
         }
         return num;
     }
