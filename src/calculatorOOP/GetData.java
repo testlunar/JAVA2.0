@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class GetData {
 
 
-    public static double getInt() {
+    public static int getInt() {
         System.out.println("Введите число:");
-        double num;
+        int num;
         Scanner reader = new Scanner(System.in);
-        if (reader.hasNextDouble()) {
-            num = reader.nextDouble();
-        } else {
-            System.out.println("Вы ввели не число! Введите еще раз: ");
+        try {
+          num = reader.nextInt();
+        } catch (Exception y) {
+            System.out.println("Вы ввели не число!");
             reader.next();
             num = getInt();
         }
@@ -28,7 +28,7 @@ public class GetData {
         if(operator=='+'||operator=='-'||operator=='/'||operator=='*') {
             return operator;
         }else {
-            System.out.println("Не верный оператор!\n");
+            System.out.println("Не верный оператор!");
             operator = getOperator();
         }
         return operator;
